@@ -24,11 +24,11 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{ asset('admin/images/icon/logo.png)}}" alt="CoolAdmin"> 
+                            <img src="{{asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="{{ route('register'}}" method="post">
+                            <form action="{{route('register')}}" method="post">
                                 @csrf
                                 <div class="form-group">
                                     <label>Nama</label>
@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Password Confirmation</label>
-                                    <input class="au-input au-input--full" type="password_confirmation" name="password" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="password_confirmation" placeholder="Password">
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
@@ -73,7 +73,7 @@
 
     </div>
 
-    @include('patrials/script')
+   @include('patrials/script')
 
 </body>
 
